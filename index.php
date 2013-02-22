@@ -1,8 +1,8 @@
 <?php 
 
 $dbh = new PDO('mysql:host=xserve1.dc.fubra.net;dbname=bytewire-bytewire', 'bytewire-zjav', 'HhHNKzelzJrF08DH');
-
-foreach($dbh->query("SELECT * FROM user_social_link") as $row)
+$dbh->setFetchMode(PDO::FETCH_OBJ);
+foreach($dbh->query("SELECT * FROM user_social_link")->object() as $row)
 {
 	print_r($row);
 }
