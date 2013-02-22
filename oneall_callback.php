@@ -1,3 +1,8 @@
 <?php
-$variable = 100;
+
+/**
+ * Some callback work
+ */
+
+
 ?>
